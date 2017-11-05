@@ -5,6 +5,13 @@
 mount -o remount,rw /dev/root
 ```
 
+## VirtualBox Shared folder
+
+When sharing a folder between Mac and a Ubuntu on VirtualBox, the filesystem is in read-only, fix it with:
+```
+sudo usermod -a -G vboxsf USER
+```
+
 ## Build Root
 
 clone build root

@@ -44,6 +44,8 @@ In the build root, replace the output/build emulation-station folder by your upd
 cd /recalbox/output/build/
 rm -rf recalbox-emulationstation2-c4c4ad6e416a285400f6a2016b40f65224e4ceae
 cp -R /path-to-your-custom/recalbox-emulationstation/ recalbox-emulationstation2-c4c4ad6e416a285400f6a2016b40f65224e4ceae
+touch recalbox-emulationstation2-c4c4ad6e416a285400f6a2016b40f65224e4ceae/.stamp_downloaded
+touch recalbox-emulationstation2-c4c4ad6e416a285400f6a2016b40f65224e4ceae/.stamp_extracted
 cd /recalbox/
-make recalbox-emulationstation2-build
+make recalbox-emulationstation2
 ```

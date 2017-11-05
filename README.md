@@ -17,11 +17,19 @@ apt-get -y install build-essential git libncurses5-dev qt5-default qttools5-dev-
 
 Build it
 ```
+cd /recalbox/
 make list-defconfigs
 make raspberrypi3_defconfig
 ```
 
 ## Build a custom EmulationStation
+
+Install dependencies based on the DockerFile:
+```
+apt-get update -y
+apt-get install -y libsdl2-dev libsdl2-mixer-dev libboost-all-dev libfreeimage-dev libfreetype6-dev libeigen3-dev libcurl4-openssl-dev libasound2-dev libgl1-mesa-dev build-essential cmake
+```
+
 
 In the build root, replace the output/build emulation-station folder by your updated sources (does not support symlink)
 
